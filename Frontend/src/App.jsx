@@ -2,14 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-function App() {
+export default function App() {
   return (
-    <div className="bg-blue-500 text-white p-8 text-center">
-      <h1 className="text-4xl font-bold">Hello Tailwind!</h1>
-      <p className="mt-4">If you see blue background and white text, Tailwind is working! 🎉</p>
+    <div className="text-8xl font-bold text-center text-red-600 mt-10">
+     <p className='text-8xl text-red-600' >Hello!</p> 
     </div>
   );
 }
 
-export default App;
