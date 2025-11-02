@@ -5,17 +5,17 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white shadow-sm w-full">
+      <div className="flex items-center justify-between w-full px-6 py-4 md:px-12">
         {/* LEFT SECTION */}
-        <div className="flex items-center gap-[4.5rem]">
+        <div className="flex items-center gap-3">
           <img
-            src="/logo.png"
+            src="src/assets/logo.png"
             alt="Logo"
-            className="w-[2rem] h-[3.125rem]" // (32px x 50px)
+            className="w-10 h-10 object-contain"
           />
           <h1
-            className="text-[2.125rem] font-bold"
+            className="text-2xl font-bold"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             Furniro
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* CENTER NAVIGATION */}
-        <nav className="hidden md:flex items-center gap-[4.6875rem]">
+        <nav className="hidden md:flex items-center gap-16">
           {["Home", "Shop", "About", "Contact"].map((item) => (
             <a
               key={item}
@@ -37,7 +37,7 @@ const Header = () => {
         </nav>
 
         {/* RIGHT ICONS */}
-        <div className="hidden md:flex items-center gap-[2.8125rem]">
+        <div className="hidden md:flex items-center gap-8">
           <User className="w-6 h-6 text-gray-700 cursor-pointer hover:text-blue-600" />
           <Search className="w-6 h-6 text-gray-700 cursor-pointer hover:text-blue-600" />
           <Heart className="w-6 h-6 text-gray-700 cursor-pointer hover:text-blue-600" />
@@ -67,7 +67,7 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <div className="flex items-center justify-start gap-6 pt-4 border-t border-gray-200">
+          <div className="flex items-around gap-6 pt-4 border-t border-gray-200">
             <User className="w-6 h-6 text-gray-700" />
             <Search className="w-6 h-6 text-gray-700" />
             <Heart className="w-6 h-6 text-gray-700" />
