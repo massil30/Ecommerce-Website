@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 export default function App() {
   return (
-    <div className="text-8xl font-bold text-center text-red-600 mt-10">
+    <div className="bg-blue-200  block">
      <p className='text-8xl text-red-600' >Hello!</p> 
     </div>
   );
