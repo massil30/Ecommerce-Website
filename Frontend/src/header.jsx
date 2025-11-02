@@ -5,8 +5,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm w-full">
-      <div className="flex items-center justify-between w-full px-6 py-4 md:px-12">
+    <header className="sticky top-0 z-50 mt-0 p-0 bg-white shadow-sm w-full">
+      <div className="flex items-center justify-between w-full  md:px-12">
         {/* LEFT SECTION */}
         <div className="flex items-center gap-3">
           <img
