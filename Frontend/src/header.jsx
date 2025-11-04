@@ -5,7 +5,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 mt-0 p-0 bg-white shadow-sm w-full">
+    <header className="sticky top-0 z-50 m-0 px-6 py-4 bg-white shadow-sm w-full">
       <div className="flex items-center justify-between w-full  ">
         {/* LEFT SECTION */}
         <div className="flex items-center gap-3">
@@ -28,7 +28,7 @@ const Header = () => {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-[1rem] md:0.8rem font-medium text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-[1rem] md:0.8rem font-light text-gray-700 hover:text-yellow-600 transition-colors"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               {item}
